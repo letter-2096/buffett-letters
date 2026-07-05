@@ -276,29 +276,137 @@
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-/* Mobile responsive */
+/* ---- Sidebar toggle (mobile) ---- */
+.sidebar-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: var(--hover-bg);
+}
+
+.sidebar-overlay {
+  display: none;
+}
+
+/* ---- Mobile responsive ---- */
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+    position: relative;
   }
 
   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    min-width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    z-index: 100;
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+    transform: translateX(-100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  .sidebar-overlay.visible {
+    display: block;
+    opacity: 1;
+  }
+
+  .sidebar-header {
+    padding: 16px 14px 10px;
+  }
+
+  .sidebar-header h1 {
+    font-size: 1rem;
+  }
+
+  .sidebar-header .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .sidebar-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .year-item {
+    padding: 10px 18px;
+    font-size: 0.92rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .year-item.active {
+    padding-left: 15px;
+    font-weight: 600;
+  }
+
+  /* ---- Main content mobile ---- */
+  .main-content {
     width: 100%;
-    min-width: 100%;
-    height: auto;
-    max-height: 35vh;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
   }
 
   .toolbar {
-    padding: 10px 16px;
-    flex-wrap: wrap;
+    padding: 10px 14px;
     gap: 8px;
   }
 
   .toolbar h2 {
-    width: 100%;
+    width: auto;
+    flex: 1;
+    font-size: 1rem;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .toolbar .year-badge {
+    font-size: 0.76rem;
+    padding: 2px 10px;
+    flex-shrink: 0;
+  }
+
+  .toolbar .letter-subtitle {
+    display: none;
+  }
+
+  .toolbar .para-count {
+    font-size: 0.7rem;
+    flex-shrink: 0;
   }
 
   .reader-container {
@@ -306,16 +414,43 @@
   }
 
   .reader-panel {
-    padding: 18px 16px;
+    padding: 16px 14px;
+    flex: none;
+    min-height: 0;
   }
 
   .reader-panel.en-panel {
     border-right: none;
     border-bottom: 2px solid var(--border);
+    max-height: 42vh;
+    overflow-y: auto;
   }
 
   .reader-panel.zh-panel {
     border-top: none;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .panel-label {
+    font-size: 0.68rem;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+  }
+
+  .paragraph-block {
+    padding: 12px 0;
+  }
+
+  .paragraph-block p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+  }
+
+  .paragraph-block.synced {
+    margin: 0 -10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .app-footer {
@@ -323,5 +458,62 @@
     font-size: 0.72rem;
     flex-wrap: wrap;
     gap: 6px;
+  }
+}
+
+/* ---- Small phone optimizations ---- */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 260px;
+    min-width: 260px;
+  }
+
+  .sidebar-header {
+    padding: 14px 12px 8px;
+  }
+
+  .sidebar-header h1 {
+    font-size: 0.95rem;
+  }
+
+  .sidebar-theme-toggle button {
+    padding: 5px 12px;
+    font-size: 0.73rem;
+  }
+
+  .toolbar {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .toolbar h2 {
+    font-size: 0.92rem;
+  }
+
+  .toolbar .year-badge {
+    font-size: 0.72rem;
+    padding: 2px 8px;
+  }
+
+  .reader-panel {
+    padding: 14px 12px;
+  }
+
+  .reader-panel.en-panel {
+    max-height: 40vh;
+  }
+
+  .paragraph-block p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .app-footer {
+    padding: 6px 12px;
+    font-size: 0.68rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    line-height: 1.45;
   }
 }
