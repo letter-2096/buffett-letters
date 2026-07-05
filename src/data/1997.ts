@@ -1,0 +1,35 @@
+import type { Letter } from '../types/letter';
+
+const letter: Letter = {
+  year: 1997,
+  title: 'The See\'s Candy Philosophy and the Beauty of Royalty-Like Businesses',
+  subtitle: 'Why the best business is a royalty on the growth of others, plus an unconventional bet on silver',
+  paragraphs: [
+    {
+      en: 'Among all the businesses we own, perhaps none better illustrates the power of our investment philosophy than See\'s Candies. We purchased See\'s in 1972 for $25 million, and since then, the company has generated over $1 billion in pre-tax profits. That is a forty-to-one return on our initial investment—and these are real cash earnings, not accounting entries. More remarkably, this performance was achieved with only a tiny incremental investment of capital. The business has required just $32 million in additional capital to fund its growth over 25 years. The rest of the profits have been distributed to Berkshire, where we have redeployed them into other outstanding businesses. This is the dream: a business that grows with minimal capital requirements, throwing off ever-increasing amounts of cash for its owners.',
+      zh: '在我们拥有的所有企业中，也许没有哪家比喜诗糖果更能说明我们投资哲学的力量了。我们于1972年以2500万美元的价格收购了喜诗糖果，自那时起，该公司产生的税前利润已超过10亿美元。这是我们初始投资的四十倍回报——而且是真实的现金利润，不是会计数据。更令人瞩目的是，这一表现只用了极少的增量资本投入。25年来，该公司仅需要3200万美元的额外资本来支持其增长。其余的利润都分配给伯克希尔，我们再将其重新部署到其他杰出企业中。这就是梦想：一家增长只要求极少资本、为其所有者带来越来越多现金的企业。',
+    },
+    {
+      en: 'The key to See\'s success is its brand, which in the minds of California consumers—and particularly around the holidays—is synonymous with quality, tradition, and affection. A box of See\'s Candies is not just confectionery; it is a gift that communicates something meaningful. Because of this brand strength, See\'s has pricing power: it can raise prices modestly each year, more than keeping pace with inflation, without losing customers. This pricing power flows directly to the bottom line, because the business requires so little additional capital. The result is a virtuous circle: higher prices fund higher-quality ingredients, which reinforce the brand, which supports further price increases. This is the very definition of a wonderful business.',
+      zh: '喜诗糖果成功的关键在于其品牌，这在加州消费者心中——尤其在节日期间——是品质、传统和情感的同义词。一盒喜诗糖果不仅仅是糖果；它是一件传递意义的礼物。由于这种品牌力量，喜诗拥有定价权：它可以每年适度提高价格，超过通货膨胀的速度，而不会失去客户。这种定价权直接流向利润，因为业务几乎不需要额外资本。结果是一个良性循环：更高的价格为更高质量的原料提供资金，这又强化了品牌，品牌又支持进一步提价。这正是优秀企业的定义。',
+    },
+    {
+      en: 'But See\'s success also contains a humbling lesson. For all its brilliance, See\'s is inevitably limited by geography and culture. California has been its natural market; moving east has always been more difficult than it appears. The business is wonderful, but it is not infinitely scalable. This brings me to an observation that I have come to regard as a first principle of evaluating any business: the best business of all is a royalty on the growth of others—a business that participates in the economic expansion around it without itself requiring commensurate capital investment. Coca-Cola is such a business. So is Gillette. So, in its own way, is the American Express card network. These businesses do not need to reinvent themselves; the world reinvents itself around them.',
+      zh: '但喜诗糖果的成功也包含着一个令人谦卑的教训。尽管它很出色，喜诗糖果不可避免地受到地理和文化的限制。加州是其天然市场；向东部扩张总是比看起来更难。这家企业很优秀，但并非无限可扩展。这让我想到一个我已将其视为评估任何企业首要原则的观察：所有企业中最好的是对他人增长的抽成——一家参与其周围经济扩张，而自身无需相应资本投入的企业。可口可乐就是这样一家企业。吉列也是。美国运通卡网络以它自己的方式也是如此。这些企业不需要重塑自己；世界围绕着它们重塑自己。',
+    },
+    {
+      en: 'In 1997, we made an investment that puzzled many observers: we purchased approximately 130 million ounces of silver. Let me explain why. This was not a bet on inflation, the apocalypse, or the end of the financial system. It was a simple supply-and-demand calculation. For many years, the world had been consuming more silver than it was producing, drawing down above-ground inventories. Meanwhile, the price of silver had been depressed for so long that new mine investment was minimal. We reasoned that, at some point, the laws of supply and demand would reassert themselves. We were not predicting when that would happen; we were simply recognizing that, at the prevailing price, we were being paid to wait. This is the kind of opportunity that requires no macroeconomic prescience—only patience and a recognition that markets sometimes take a long time to correct obvious imbalances.',
+      zh: '1997年，我们做了一项令许多观察者困惑的投资：我们购买了约1.3亿盎司白银。让我解释原因。这不是对通货膨胀、世界末日或金融体系终结的赌注。这是一个简单的供需计算。多年来，全世界消费的白银多于生产，不断消耗地上库存。与此同时，白银价格长期低迷，新矿投资微乎其微。我们推断，在某个时候，供需法则将重新发挥作用。我们并没有预测那会在何时发生；我们只是认识到，在当时的价位，我们等于是在被付钱来等待。这类机会不需要宏观经济的先见之明——只需要耐心，以及认识到市场有时需要很长时间才能纠正明显失衡的认知。',
+    },
+    {
+      en: 'Our acquisition of Star Furniture in 1997 illustrates a different dimension of our strategy: buying well-managed family businesses and letting them continue to be well-managed. Melvyn Wolff and his team built Star Furniture into the dominant home furnishings retailer in Texas through decades of hard work and a fanatical devotion to customer satisfaction. When we bought the company, we made exactly one demand: keep doing what you have been doing. We did not install layers of management from Omaha. We did not impose reporting requirements designed by consultants. We did not ask Melvyn to attend strategy retreats. We simply told him that the company was now protected by Berkshire\'s capital, that he should continue to make the decisions he had always made, and that we would be available if ever he needed us. This is the Berkshire model: buy wonderful businesses run by wonderful people, and then don\'t mess it up.',
+      zh: '我们在1997年对明星家具的收购阐明了我们战略的不同维度：购买管理良好的家族企业，让它们继续保持良好的管理。梅尔文·沃尔夫及其团队通过数十年的辛勤工作和对客户满意度的狂热追求，将明星家具建成了德克萨斯州首屈一指的家居零售商。当我们买下这家公司时，我们只提出了一个要求：继续做你们一直在做的事。我们没有从奥马哈层层派人来管理。我们没有强加咨询顾问设计的报告要求。我们没有要求梅尔文参加战略务虚会。我们只是告诉他，公司现在由伯克希尔的资本保护，他应继续做出他一贯做出的决策，我们随时待命。这就是伯克希尔模式：购买由优秀人才经营的优秀企业，然后别把事情搞砸。',
+    },
+    {
+      en: 'As we closed 1997, our book value per share had compounded at 24.1% annually for 33 years. These are the numbers, and they are gratifying. But I want to make sure that no one extrapolates this performance into the future. The law of large numbers is no mere academic abstraction; it is an iron constraint on the rate at which any entity, including Berkshire, can compound its capital. We now manage an equity base of more than $30 billion. To increase that by 20% in a single year, we would need to find net investments generating $6 billion in value—every year, year after year. The universe of opportunities that can accommodate that scale is small and shrinking. We will do our best, but I must warn you: the days of 20%+ annual gains are behind us, and anyone who expects them to continue is destined for disappointment.',
+      zh: '1997年结束时，我们的每股账面价值在过去33年中以年均24.1%的速度复合增长。这些都是实实在在的数字，令人欣慰。但我想确保没有人将这种表现外推至未来。大数法则不仅是学术上的抽象概念；它对任何实体（包括伯克希尔）的资本复合速率构成了铁的约束。我们现在管理的股本基础超过300亿美元。要在一年内将其增加20%，我们需要找到产生60亿美元净价值的投资——每年如此、年复一年。能够容纳这种规模的机会范围很小，且在不断缩小。我们会尽力而为，但我必须提醒：年化20%以上收益的日子已经过去，任何期望其继续的人注定会失望。',
+    },
+  ],
+};
+
+export default letter;

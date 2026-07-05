@@ -1,0 +1,35 @@
+import type { Letter } from '../types/letter';
+
+const letter: Letter = {
+  year: 1998,
+  title: 'The General Re Acquisition and the True Meaning of Value',
+  subtitle: 'A $22 billion merger, the distinction between price and value, and why counting may be better than calculating',
+  paragraphs: [
+    {
+      en: '1998 was marked by the largest acquisition in Berkshire\'s history: our $22 billion merger with General Re Corporation, one of the world\'s premier reinsurance companies. This transaction, paid for entirely with Berkshire stock, nearly doubled our equity base and added a massive new pool of float to our balance sheet. The logic of the merger was straightforward: General Re possessed precisely the kind of disciplined underwriting culture that we admire, a global franchise that we could never build on our own, and a management team—led by Ron Ferguson—that shared our long-term orientation. Yet the sheer size of the transaction gave me pause. In life, the mistakes you regret most are not the ones you declined to make, but the ones you made that you should have declined.',
+      zh: '1998年以伯克希尔历史上最大的收购案为标志：我们以220亿美元并购了通用再保险公司，这是全球首屈一指的再保险公司之一。这笔交易完全以伯克希尔股票支付，几乎使我们的股本基础翻了一番，并为我们的资产负债表增添了一个庞大的浮存金池。并购的逻辑很直接：通用再保险恰恰拥有我们钦佩的那种严格的承保文化、我们永远无法独自建立的全球经营体系，以及一个由罗恩·弗格森领导的、与我们长期导向一致的管理团队。然而，这笔交易的庞大规模让我犹豫。在生活中，你最遗憾的错误不是那些你拒绝做的，而是那些你本应拒绝却做了的。',
+    },
+    {
+      en: 'The General Re acquisition brings me to an observation that I have made before but that bears repeating in the context of large mergers: "Price is what you pay; value is what you get." This simple phrase captures the essential distinction between the market\'s fleeting opinion and the underlying economic reality. When we issued Berkshire stock to acquire General Re, we were paying with a currency—our shares—that we believed was fully and fairly valued. General Re shareholders received approximately 27% of our company in exchange for their shares. The question that only time will answer is whether the future earnings stream of General Re—amplified by the investment of its enormous float—will justify the value we transferred. On this score, we are optimistic but not certain. The margin of safety in a transaction of this magnitude is always smaller than one would like.',
+      zh: '通用再保险的收购让我想到了一个我之前做过但在大型并购背景下值得重复的观察："价格是你付出的，价值是你得到的。"这句简单的话捕捉了市场短暂意见与底层经济现实之间的本质区别。当我们发行伯克希尔股票以收购通用再保险时，我们是在用我们相信被充分公允估值的货币——我们的股票——来支付。通用再保险的股东们获得了我们公司约27%的股份，以换取他们的股票。只有时间才能回答的问题是：通用再保险未来的收益流——加上其庞大浮存金的投资收益放大效应——是否能证明我们所转移的价值是合理的。在这一点上，我们持乐观态度但并不确定。如此规模交易中的安全边际总是比人们希望的要小。',
+    },
+    {
+      en: 'One lesson that has been reinforced for me over decades of evaluating acquisitions is captured in the aphorism: "When a management with a reputation for brilliance tackles a business with a reputation for bad economics, it is the reputation of the business that remains intact." In plain English: the business itself matters more than the managers. If you buy a business with poor underlying economics—low returns on capital, fierce competition, commodity products—even the most talented management will struggle to produce satisfactory results. Conversely, a business with terrific economics can survive—and often thrive—even under mediocre management. This is why we spend so much time thinking about the moat before we think about the management.',
+      zh: '几十年来评估收购强化了我的一项经验，可以用一句格言来概括："当一位以才华著称的管理层接手一家以糟糕经济性著称的企业时，完好无损的总是企业的名声。"用大白话说：生意本身比管理者更重要。如果你收购了一家基础经济性差的企业——资本回报率低、竞争激烈、产品同质化——即使是最有才华的管理层也难以产生令人满意的结果。相反，一家经济性极好的企业即使在平庸的管理下也能生存——而且常常能繁荣发展。这就是为什么我们在考虑管理层之前，花那么多时间思考护城河的原因。',
+    },
+    {
+      en: 'This year, I want to discuss a subtle but important concept in investing: the difference between "counting" and "calculating." In our investment process, we place far more weight on counting—on determining what we can know with a high degree of confidence—than on calculating, which often involves projecting unknowable variables many years into the future. When we look at Coca-Cola, we can count on the fact that billions of people around the world consume beverages every day, that Coca-Cola has a dominant share of this consumption in many markets, and that the brand is unlikely to be dislodged in our lifetimes. We cannot calculate with any precision what Coca-Cola\'s earnings will be in 2008 or 2018, but we can count on them being substantially higher than they are today. This distinction—between what is knowable and what is merely guessable—is one that too few investors make.',
+      zh: '今年，我想讨论投资中一个微妙但重要的概念："计数"与"计算"之间的区别。在我们的投资过程中，我们赋予计数的权重远大于计算——即确定我们能够高度确信的事情，而不是那些通常涉及对多年后不可知变量进行预测的计算。当我们审视可口可乐时，我们可以"计数"到的事实是：世界各地数十亿人每天都在消费饮料，可口可乐在许多市场中占据这些消费的主导份额，并且这个品牌在我们有生之年不太可能被取代。我们无法精确地"计算"可口可乐在2008年或2018年的盈利，但我们可以"计数"到它们将比今天显著更高。这个区别——在可知与仅能猜测之间的区别——是太少的投资者能够做出的。',
+    },
+    {
+      en: 'The year also brought dramatic turbulence in global financial markets. The Asian financial crisis, the Russian debt default, and the near-collapse of Long-Term Capital Management created a cascade of events that tested the world\'s financial architecture. In September 1998, we offered to purchase the entire fixed-income portfolio of LTCM, an offer that was ultimately superseded by a consortium organized by the Federal Reserve. The LTCM episode was a textbook illustration of several principles that Charlie and I hold dear: the danger of excessive leverage, the illusion of precision in mathematical models applied to human behavior, and the speed with which liquidity can evaporate. A group of very smart people—several Nobel laureates among them—nearly brought down the global financial system because they confused high IQs with low risk. Intelligence and prudence are not the same thing.',
+      zh: '这一年也带来了全球金融市场的剧烈动荡。亚洲金融危机、俄罗斯债务违约以及长期资本管理公司的几近崩溃，造成了一系列考验世界金融架构的事件。1998年9月，我们提出购买LTCM的全部固定收益组合，这一提议最终被美联储组织的财团所取代。LTCM事件是查理和我所珍视的几条原则的教科书式例证：过度杠杆的危险、应用于人类行为的数学模型精确性幻觉，以及流动性消失的速度。一群非常聪明的人——其中包括几位诺贝尔奖得主——几乎拖垮了全球金融体系，因为他们将高智商与低风险混为一谈。智慧与谨慎不是一回事。',
+    },
+    {
+      en: 'Looking back on 1998, I am grateful for the trust that our selling shareholders placed in us, and I am mindful of the responsibility that comes with managing an enterprise of this scale. Berkshire is no longer a small partnership that can move nimbly into and out of investments. Our permanent holdings are substantial positions in some of the world\'s largest companies. Our wholly-owned subsidiaries employ tens of thousands of people. Our insurance obligations span decades. The decisions we make today will reverberate for years, and in some cases, for generations. This is not a burden; it is a privilege. But it is a privilege that requires us to think differently than we did when Berkshire was a fraction of its current size. The rules of the game do not change as you move up in weight class; only the consequences of your mistakes do.',
+      zh: '回顾1998年，我感谢出让股份的股东们对我们的信任，也深知管理如此规模企业所肩负的责任。伯克希尔不再是一个可以灵活进出投资的小型合伙企业。我们的永久持股是对世界上一些最大公司的重大头寸。我们的全资子公司雇用了数万名员工。我们的保险义务跨越数十年。我们今天做出的决策将在未来多年里产生回响，在某些情况下甚至是几代人。这不是负担，而是殊荣。但这一殊荣要求我们以不同于伯克希尔规模尚小时的方式思考。游戏规则不会随着你体重级别的提升而改变；改变的只是你犯错的后果。',
+    },
+  ],
+};
+
+export default letter;

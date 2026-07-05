@@ -1,0 +1,48 @@
+# 依赖文件夹（体积巨大，不需要上传代码仓库）
+node_modules/
+
+# Vite打包产物（dist放本地即可，Vercel会云端重新build）
+dist/
+dist-ssr/
+
+# 本地环境变量（防止把密钥、推广ID、隐私配置泄露到公开仓库）
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器缓存、配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 本地预览、缓存文件夹
+.cache/
+.npm/
+
+# 操作系统隐藏文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 图片资源（如果你本地存放大量图书原图，不想上传就放开下面注释）
+# public/images/*.jpg
+# public/images/*.png
+
+.claude/
+.oxlintrc.json
