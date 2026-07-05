@@ -9,6 +9,7 @@ function App() {
   const [years, setYears] = useState<LetterMeta[]>([]);
   const [selectedYear, setSelectedYear] = useState<number>(2023);
   const [letter, setLetter] = useState<Letter | undefined>();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const saved = localStorage.getItem('buffett-theme');
     return (saved === 'dark' ? 'dark' : 'light');
@@ -38,10 +39,21 @@ function App() {
 
   const currentMeta = years.find(y => y.year === selectedYear);
 
+  const handleYearSelect = useCallback((year: number) => {
+    setSelectedYear(year);
+    setSidebarOpen(false);
+  }, []);
+
   return (
     <div className="app">
+      {/* Sidebar overlay (mobile) */}
+      <div
+        className={`sidebar-overlay${sidebarOpen ? ' visible' : ''}`}
+        onClick={() => setSidebarOpen(false)}
+      />
+
       {/* Sidebar */}
-      <aside className="sidebar">
+      <aside className={`sidebar${sidebarOpen ? ' open' : ''}`}>
         <div className="sidebar-header">
           <h1>巴菲特致股东信</h1>
           <div className="subtitle">Berkshire Hathaway Shareholder Letters</div>
@@ -57,7 +69,7 @@ function App() {
             <button
               key={y.year}
               className={`year-item${y.year === selectedYear ? ' active' : ''}`}
-              onClick={() => setSelectedYear(y.year)}
+              onClick={() => handleYearSelect(y.year)}
             >
               {y.year}
             </button>
@@ -68,6 +80,13 @@ function App() {
       {/* Main content */}
       <main className="main-content">
         <div className="toolbar">
+          <button
+            className="sidebar-toggle"
+            onClick={() => setSidebarOpen(prev => !prev)}
+            aria-label="选择年份"
+          >
+            {sidebarOpen ? '✕' : '☰'}
+          </button>
           <h2>{letter?.title || '请选择年份'}</h2>
           <span className="year-badge">{selectedYear}</span>
           {currentMeta && (
@@ -85,7 +104,7 @@ function App() {
         ) : (
           <div className="empty-state">
             <div className="icon">📖</div>
-            <p>从左侧选择年份开始阅读</p>
+            <p>请点击左上角菜单选择年份开始阅读</p>
           </div>
         )}
         <Footer />
